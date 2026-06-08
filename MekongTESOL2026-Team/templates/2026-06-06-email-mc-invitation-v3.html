@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>MC Invitation — Mekong TESOL 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Source+Sans+3:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --p:#6a2ea6; --p-dark:#5420a0; --p-light:#8b4cc7;
+  --i:#2703a6; --i-dark:#1d0280;
+  --g:#dd9a4a; --g-light:#edd66d;
+  --pk:#f2b0fc; --bl:#b0daff; --yl:#edd66d;
+  --bg-deep:#201e59; --bg-plum:#3a1f73; --bg-paper:#faf8ff;
+  --ink-900:#0f0d2e; --ink-700:#2a2850; --ink-500:#5a5878; --ink-300:#9e9cc0;
+  --line:#e4e1f2; --line-light:#f2f0fa;
+  --grad-mid:linear-gradient(135deg,#201e59 0%,#3a1f73 50%,#6a2ea6 100%);
+  --grad-gold:linear-gradient(90deg,#dd9a4a,#edd66d);
+  --r-sm:8px; --r-md:14px; --r-lg:20px; --r-pill:999px;
+  --shadow-md:0 8px 28px rgba(15,13,46,.12);
+  --shadow-lg:0 20px 56px rgba(15,13,46,.18);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:'Source Sans 3',-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;
+  background:#eeeaf6;
+  color:var(--ink-900);
+  -webkit-font-smoothing:antialiased;
+  padding:32px 16px 64px;
+}
+
+/* ── PREVIEW SHELL ── */
+.email-frame{background:linear-gradient(145deg,#eeeaf6,#e4dfef);padding:28px;border-radius:20px;border:1px solid var(--line);max-width:680px;margin:0 auto}
+.email-meta{padding:12px 18px;background:#f9f7ff;border-bottom:1px solid var(--line);font-size:13px;color:var(--ink-500);display:flex;gap:16px;flex-wrap:wrap;border-radius:10px 10px 0 0}
+.email-meta b{color:var(--ink-900);font-weight:600}
+.email-meta .sub{color:var(--ink-900);font-weight:600;font-family:'Sora',sans-serif;font-size:13.5px}
+.email-desktop{max-width:620px;margin:0 auto;border-radius:0 0 10px 10px;overflow:hidden;box-shadow:var(--shadow-lg);border:1px solid var(--line);border-top:none}
+
+/* ── EMAIL INNARDS (.mail) ── */
+.mail{font-family:'Source Sans 3',Arial,sans-serif;color:#141236;background:#fff}
+.mail a{color:var(--i)}
+
+/* Header/Footer image rows */
+.mail .hdr{display:block;width:100%;line-height:0}
+.mail .hdr img{width:100%;max-width:620px;height:auto;display:block}
+.mail .ftr{display:block;width:100%;line-height:0}
+.mail .ftr img{width:100%;max-width:620px;height:auto;display:block}
+
+/* Body */
+.mail .body{padding:36px 36px 28px;font-size:16px;line-height:1.65;color:#2a2850}
+.mail .body .greeting{font-family:'Sora',sans-serif;font-weight:700;font-size:17px;margin-bottom:18px;color:var(--ink-900)}
+.mail .body h3{font-family:'Sora',sans-serif;font-weight:600;font-size:17px;color:var(--ink-900);margin:24px 0 8px}
+.mail .body p{margin-bottom:14px}
+
+/* Info block — detail table */
+.mail .info-block{background:#f7f4fd;border-left:4px solid var(--p);border-radius:0 var(--r-md) var(--r-md) 0;padding:18px 22px;margin:18px 0}
+.mail .info-block dl{display:grid;grid-template-columns:140px 1fr;gap:8px 14px;font-size:14px;margin:0}
+.mail .info-block dt{font-family:'Sora',sans-serif;font-weight:600;font-size:11.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-500);padding-top:2px}
+.mail .info-block dd{margin:0;color:var(--ink-900);font-size:15px}
+
+/* Scope list */
+.mail .scope-block{background:#f7f4fd;border-left:4px solid var(--p);border-radius:0 var(--r-md) var(--r-md) 0;padding:18px 22px;margin:18px 0}
+.mail .scope-block .eyebrow{font-family:'Sora',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--p);margin-bottom:14px}
+.mail .scope-block ul{padding-left:18px;margin:0;font-size:14.5px;color:var(--ink-700);line-height:1.7}
+.mail .scope-block ul li{margin-bottom:6px}
+.mail .scope-block ul li:last-child{margin-bottom:0}
+
+/* Compensation — dark block */
+.mail .comp-block{background:var(--grad-mid);border-radius:var(--r-md);padding:22px 24px;margin:18px 0}
+.mail .comp-block .eyebrow{font-family:'Sora',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--yl);margin-bottom:16px}
+.mail .comp-row{display:flex;justify-content:space-between;align-items:baseline;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.12);font-size:14px}
+.mail .comp-row:last-of-type{border-bottom:none;padding-bottom:0}
+.mail .comp-row .cl{color:rgba(255,255,255,.78);line-height:1.4}
+.mail .comp-row .cl small{display:block;font-size:11.5px;color:rgba(255,255,255,.4);margin-top:2px}
+.mail .comp-row .cv{font-family:'Sora',sans-serif;font-weight:700;color:var(--yl);font-size:15px;white-space:nowrap;margin-left:16px}
+.mail .comp-row.total .cl{font-family:'Sora',sans-serif;font-weight:700;color:#fff}
+.mail .comp-row.total .cv{font-size:19px}
+.mail .comp-note{margin-top:14px;font-size:12px;color:rgba(255,255,255,.42);line-height:1.65;border-top:1px solid rgba(255,255,255,.10);padding-top:12px}
+
+/* Urgency / deadline */
+.mail .urgency{background:var(--grad-gold);border-radius:var(--r-md);padding:13px 18px;display:flex;align-items:flex-start;gap:12px;margin:18px 0}
+.mail .urgency .icon{font-size:18px;flex:none;margin-top:2px}
+.mail .urgency .text{font-family:'Sora',sans-serif;font-weight:700;font-size:14px;color:#1a0d00;line-height:1.55}
+.mail .urgency .text span{display:block;font-weight:400;font-size:13px;color:rgba(26,13,0,.65);margin-top:3px}
+
+.mail .divider{height:1px;background:var(--line);margin:22px 0}
+
+/* Bullet-proof CTA button */
+.mail-btn{display:inline-block;padding:14px 28px;border-radius:var(--r-md);font-family:'Sora',Arial,sans-serif;font-weight:700;font-size:15px;text-decoration:none !important;letter-spacing:.02em;line-height:1}
+.mail-btn-p{background:linear-gradient(135deg,#8b4cc7,#6a2ea6);color:#ffffff !important}
+
+/* Stay Connected */
+.mail .stay-connected{padding:28px 36px;background:#fff;text-align:center;border-top:1px solid var(--line)}
+.mail .stay-connected h3{font-family:'Sora',sans-serif;font-weight:700;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--p);margin-bottom:18px}
+.mail .cta-row{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+.mail .cta-row a:hover{opacity:.88}
+.mail .cta-row img{height:44px;width:auto;display:block}
+
+/* Unsubscribe */
+.mail .unsub{padding:10px 24px;background:#fff;text-align:center;font-size:11.5px;color:var(--ink-300);border-top:1px solid var(--line)}
+.mail .unsub a{color:var(--i)}
+</style>
+</head>
+<body>
+
+<div class="email-frame">
+
+  <!-- Email meta strip (preview only) -->
+  <div class="email-meta">
+    <div><b>From</b> Mekong TESOL 2026 &lt;info@mekongtesol.vn&gt;</div>
+    <div class="sub">Invitation to serve as MC — Mekong TESOL 2026</div>
+    <div><b>Preheader</b> We'd love to have you back on stage, 19 July 2026.</div>
+  </div>
+
+  <div class="email-desktop">
+  <div class="mail">
+
+    <!-- ① HEADER IMAGE — official asset, never rebuild in CSS -->
+    <div class="hdr">
+      <img src="https://mekongtesol.wordpress.com/wp-content/uploads/2026/03/email_header_global.png"
+           alt="Mekong TESOL — The 5th International Conference · CANTHO · July 19, 2026 · Beyond Language: RE-EMPOWERING LEARNERS"
+           width="620" style="max-width:620px;width:100%;display:block">
+    </div>
+
+    <!-- ② BODY -->
+    <div class="body">
+
+      <p class="greeting">Dear [MC's Full Name],</p>
+
+      <p>
+        On behalf of the Organizing Committee of the <b>5th Mekong TESOL International Conference 2026</b>,
+        we would like to extend our warmest invitation to you to return as our
+        <b>Master of Ceremonies</b> for this year's event.
+      </p>
+
+      <p>
+        Having witnessed your professionalism, warmth, and ability to connect with our audience
+        during <b>Mekong TESOL 2023</b>, the team unanimously felt that there is no one better
+        suited to guide our participants through this milestone fifth edition. We genuinely value
+        the trust we have built together, and we hope you will be willing to join us once more.
+      </p>
+
+      <!-- Event details -->
+      <div class="info-block">
+        <dl>
+          <dt>Theme</dt>
+          <dd>"Beyond Language: Re-Empowering Learners through Skills, Emotions, and Connections"</dd>
+          <dt>Date</dt>
+          <dd><b>Saturday, 19 July 2026</b></dd>
+          <dt>Venue</dt>
+          <dd>Can Tho University of Medicine and Pharmacy (CTUMP), Can Tho City</dd>
+          <dt>MC Stage</dt>
+          <dd><b>Hội trường Cửu Long</b> — Main Hall</dd>
+          <dt>Programme</dt>
+          <dd>Opening Ceremony · Plenary Sessions · Invited Speaker sessions</dd>
+          <dt>Expected attendance</dt>
+          <dd>1,000+ educators, researchers &amp; students</dd>
+        </dl>
+      </div>
+
+      <p>As MC, your role will be central to the flow and atmosphere of the entire day. Below is a summary of what the role entails.</p>
+
+      <!-- Scope of work -->
+      <div class="scope-block">
+        <div class="eyebrow">Scope of Work</div>
+        <ul>
+          <li>Collaborate with the team to prepare the <b>MC script in English</b> in advance of the event</li>
+          <li>Attend a <b>half-day rehearsal session</b> (date TBC, prior to conference day) to run through programme flow and stage coordination</li>
+          <li>Serve as MC for the <b>Main Hall Programme at Hội trường Cửu Long</b> on 19 July 2026, covering the Opening Ceremony, Plenary Sessions, and Invited Speaker sessions</li>
+          <li>Coordinate on-stage with speakers, panelists, and the technical team to ensure smooth programme flow</li>
+          <li>Represent the spirit and values of Mekong TESOL with professionalism and warmth</li>
+        </ul>
+      </div>
+
+      <!-- Compensation -->
+      <div class="comp-block">
+        <div class="eyebrow">Professional Compensation</div>
+        <div class="comp-row">
+          <div class="cl">MC Professional Fee<small>Script preparation · half-day rehearsal · full conference day</small></div>
+          <div class="cv">1,500,000 VND</div>
+        </div>
+        <div class="comp-row">
+          <div class="cl">Costume &amp; Makeup Allowance</div>
+          <div class="cv">1,000,000 VND</div>
+        </div>
+        <div class="comp-row total">
+          <div class="cl">Total per MC</div>
+          <div class="cv">2,500,000 VND</div>
+        </div>
+        <div class="comp-note">Compensation will be disbursed in full following the conference. Payment arrangements will be confirmed after your acceptance.</div>
+      </div>
+
+      <!-- Deadline -->
+      <div class="urgency">
+        <div class="icon">📅</div>
+        <div class="text">
+          Please confirm your availability by <b>Tuesday, 17 June 2026</b>.
+          <span>Following your response, a member of our team will reach out to share further details about the programme, briefing schedule, and logistics.</span>
+        </div>
+      </div>
+
+      <p>
+        If you have any questions or would like to discuss anything before making your decision,
+        please <b>reply directly to this email</b> — we are happy to chat at a time that suits you.
+      </p>
+
+      <p>
+        We truly hope to have you with us again on July 19th. Your presence would mean a great
+        deal to the entire Mekong TESOL community.
+      </p>
+
+      <p>With warm regards and appreciation,</p>
+      <p style="margin-top:16px">
+        <b style="font-family:'Sora',sans-serif;font-size:15px;color:var(--ink-900)">Mekong TESOL 2026 Organizing Committee</b>
+      </p>
+
+      <div class="divider"></div>
+
+      <p style="text-align:center">
+        <a class="mail-btn mail-btn-p" href="mailto:info@mekongtesol.vn?subject=MC%20Invitation%20Response%20%E2%80%94%20Mekong%20TESOL%202026">
+          Reply to This Invitation
+        </a>
+      </p>
+
+      <p style="font-size:13.5px;color:var(--ink-500);margin-top:18px">
+        Questions? Reply to this email or write to
+        <a href="mailto:info@mekongtesol.vn">info@mekongtesol.vn</a>.
+        We respond within one business day.
+      </p>
+
+    </div><!-- /body -->
+
+    <!-- ③ STAY CONNECTED -->
+    <div class="stay-connected">
+      <h3>STAY CONNECTED</h3>
+      <div class="cta-row">
+        <a href="https://www.facebook.com/mekongtesol" target="_blank">
+          <img src="https://mekongtesol.wordpress.com/wp-content/uploads/2026/03/cta-facebook-button.png" alt="Follow Mekong TESOL on Facebook">
+        </a>
+        <a href="https://www.youtube.com/@mekongtesol2119" target="_blank">
+          <img src="https://mekongtesol.wordpress.com/wp-content/uploads/2026/03/cta-youtube-button-1.png" alt="Watch Mekong TESOL on YouTube">
+        </a>
+        <a href="mailto:info@mekongtesol.vn" target="_blank">
+          <img src="https://mekongtesol.wordpress.com/wp-content/uploads/2026/03/cta-email-us-button.png" alt="Email Mekong TESOL">
+        </a>
+      </div>
+    </div>
+
+    <!-- ④ FOOTER IMAGE — official asset, never rebuild in CSS -->
+    <div class="ftr">
+      <img src="https://mekongtesol.wordpress.com/wp-content/uploads/2026/03/email_footer_global.png"
+           alt="Mekong TESOL — facebook.com/mekongtesol · info@mekongtesol.vn · mekongtesol.vn"
+           width="620" style="max-width:620px;width:100%;display:block">
+    </div>
+
+    <!-- ⑤ UNSUBSCRIBE LINE -->
+    <div class="unsub">
+      This invitation is sent personally and in confidence. Please do not forward without permission. &nbsp;·&nbsp;
+      <a href="#">Unsubscribe</a>
+    </div>
+
+  </div><!-- /mail -->
+  </div><!-- /email-desktop -->
+</div><!-- /email-frame -->
+
+</body>
+</html>
